@@ -46,7 +46,7 @@ make test
 - Global prune loads user-level config and hooks only because it can run without a repository context
 - State file tracks pool membership and temporary owner/destroy reservations, not long-term usage status
 - Git operations shell out to `git` (go-git has incomplete worktree support)
-- Self-healing: stale state entries are auto-removed
+- Self-healing: stale state entries are auto-removed, and `get` prunes stale git worktree registrations before adding a worktree
 
 ## Windows Compatibility
 
